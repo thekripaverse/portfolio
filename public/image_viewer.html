@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: sans-serif; background: #222; color: #fff; padding: 20px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+    .card { border: 1px solid #444; padding: 10px; background: #333; border-radius: 4px; }
+    img { width: 100%; height: 200px; object-fit: cover; border-radius: 2px; }
+    .name { margin-top: 10px; font-weight: bold; text-align: center; font-size: 12px; word-break: break-all; }
+  </style>
+</head>
+<body>
+  <h1>Portfolio Image Discovery Grid</h1>
+  <div class="grid" id="grid"></div>
+  <script>
+    const images = [
+      "active-in-participation.jpeg", "always-brainstorming.jpeg", "beyond-academics.jpeg", 
+      "beyond-academics2.jpeg", "conducting-events.jpeg", "dhruva1.jpeg", "dhruva2.jpeg", 
+      "dhruva3.jpeg", "dhruva4.jpeg", "hackathons.jpeg", "inside-campus-win.jpeg", 
+      "love-to-code.jpeg", "love-to-explore.jpeg", "love-to-talk.jpeg", "love-to-talk2.jpeg", 
+      "love-to-travel (2).jpeg", "love-to-travel.jpeg", "love-to-travel2.jpeg", "my-pillars.jpeg", 
+      "my-team.jpeg", "my-team2.jpeg", "my-team3.jpeg", "open-for-advice.jpeg", 
+      "orators-club.jpeg", "outreach-and-win.jpeg", "outreach-win2.jpeg", "project-expo.jpeg", 
+      "project-expo2.jpeg", "wherever.jpeg"
+    ];
+    const grid = document.getElementById("grid");
+    images.forEach(img => {
+      const card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = `<img src="/data/${img}" /><div class="name">${img}</div>`;
+      grid.appendChild(card);
+    });
+  </script>
+</body>
+</html>

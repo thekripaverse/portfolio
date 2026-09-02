@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-sans: "Geist", "Inter", sans-serif;
+  
+  --color-warm-white: #FAF6EE;
+  --color-near-black: #1C1412; /* Espresso near-black */
+  --color-muted-gray: #777777;
+  --color-electric-lime: #5C2533; /* Plum burgundy accent */
+  
+  --color-plum: #5C2533;
+  --color-lavender: #B28D95;
+  --color-copper: #C87A53;
+  --color-rose: #C0A0A5;
+  
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6EE;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4C9B8;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5C2533;
+}
+
+/* Hide standard cursor when custom cursor active */
+@media (pointer: fine) {
+  .custom-cursor-active,
+  .custom-cursor-active * {
+    cursor: none !important;
+  }
+}
+
+/* Horizontal scrolling helper */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom styles for layout grids */
+.editorial-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+/* Glassmorphism accent - used sparingly */
+.studio-glass {
+  background: rgba(252, 251, 249, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Animation triggers */
+.reveal-text {
+  overflow: hidden;
+}
+
+/* Ensure focus outline styling */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #ccff00;
+  outline-offset: 4px;
+}
