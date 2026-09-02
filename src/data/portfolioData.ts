@@ -1,3 +1,14 @@
+import salesosImg from "../assets/projects/salesos.png";
+import clinicalcopilotImg from "../assets/projects/clinicalcopilot.png";
+import aarambamImg from "../assets/projects/aarambam.png";
+import veritasnetImg from "../assets/projects/veritasnet.png";
+
+import travelPlaneImg from "../assets/hcl-guvi/travel_plane.png";
+import teamPosterImg from "../assets/hcl-guvi/team_poster.png";
+import boardingPassImg from "../assets/hcl-guvi/boarding_pass.png";
+import presentationScreenImg from "../assets/hcl-guvi/presentation_screen.png";
+import certificateImg from "../assets/hcl-guvi/certificate.png";
+
 export interface Project {
   id: string;
   title: string;
@@ -80,7 +91,7 @@ export const projectsData: Project[] = [
     description: "Autonomous Sales Intelligence & Revenue Acceleration Agent designed to analyze prospects, understand engagement, prioritize leads and support autonomous sales actions.",
     technologies: ["Python", "FastAPI", "PostgreSQL", "Redis", "Vector Database", "LangGraph", "LLMs"],
     github: "https://github.com/thekripaverse/SalesOS.ai",
-    image: "/src/assets/projects/salesos.png",
+    image: salesosImg,
     caseStudy: {
       problem: "Traditional CRM platforms are passive databases. Sales representatives spend up to 60% of their time researching prospects, writing outreach emails, and manually qualifying leads, rather than actually closing deals.",
       idea: "What if we created a semi-autonomous AI colleague that sits inside your system, actively monitors prospect signals, queries multiple vector indices to match context, and drafts hyper-personalized responses dynamically?",
@@ -121,7 +132,7 @@ export const projectsData: Project[] = [
     description: "Agentic healthcare automation concept involving multimodal understanding, patient verification and intelligent workflow automation.",
     technologies: ["Python", "TensorFlow", "FastAPI", "Multimodal LLMs", "FHIR Standards", "Security Encryption"],
     github: "https://github.com/thekripaverse/ClinicalCopilot",
-    image: "/src/assets/projects/clinicalcopilot.png",
+    image: clinicalcopilotImg,
     caseStudy: {
       problem: "Doctors spend hours typing patient records, looking up history, and verifying medical scans. Multimodal records are fragmented, causing transcription errors.",
       idea: "A secure dashboard that accepts combined inputs (voice diagnostics, patient charts, and medical imaging) and maps them into standardized HL7/FHIR profiles.",
@@ -159,7 +170,7 @@ export const projectsData: Project[] = [
     description: "Multilingual Voice UPI assistant with built-in scam shields designed for non-tech-savvy users to enable accessible and secure transactions.",
     technologies: ["Python", "Whisper API", "FastAPI", "LlamaIndex", "Heuristic Rules", "Android SDK"],
     github: "https://github.com/thekripaverse/Aarambam",
-    image: "/src/assets/projects/aarambam.png",
+    image: aarambamImg,
     caseStudy: {
       problem: "Traditional digital payment apps require visual navigation and technical literacy. Rural and elderly users struggle with English-based interfaces and are highly vulnerable to social engineering scams and fake UPI payment requests.",
       idea: "What if we created a voice-first, multilingual conversational assistant that handles payments through natural spoken language, while running real-time heuristic security checks on merchant details and payment requests?",
@@ -198,7 +209,7 @@ export const projectsData: Project[] = [
     description: "AI-powered deepfake voice detection and security gateway designed to verify audio authenticity and block synthetic voice frauds in real-time.",
     technologies: ["Python", "PyTorch", "Librosa", "LSTM Models", "FastAPI", "Docker", "React"],
     github: "https://github.com/thekripaverse/VeritasNet",
-    image: "/src/assets/projects/veritasnet.png",
+    image: veritasnetImg,
     caseStudy: {
       problem: "The rapid rise of Generative AI has made voice cloning and audio deepfakes highly accessible, enabling sophisticated social engineering, identity theft, and financial fraud targeting bank call centers and families.",
       idea: "A real-time audio analysis gateway that ingests incoming voice payloads, processes acoustic features, checks for synthetic voice patterns, and scores authenticity before validating transactions.",
@@ -639,11 +650,11 @@ export const achievementsData: Achievement[] = [
     image: "/data/HCL-GUVI.jpeg",
     images: [
       "/data/HCL-GUVI.jpeg",
-      "/src/assets/hcl-guvi/travel_plane.png",
-      "/src/assets/hcl-guvi/team_poster.png",
-      "/src/assets/hcl-guvi/boarding_pass.png",
-      "/src/assets/hcl-guvi/presentation_screen.png",
-      "/src/assets/hcl-guvi/certificate.png"
+      travelPlaneImg,
+      teamPosterImg,
+      boardingPassImg,
+      presentationScreenImg,
+      certificateImg
     ],
     linkedin: "https://www.linkedin.com/in/kripa-sree-m/"
   },
@@ -813,7 +824,7 @@ export const hclGuviStory = {
       chapterNumber: "02",
       headline: "WE SIMPLY WANTED TO TRY.",
       text: "This journey began on a random day. It was me and my two friends. We registered for 2 events just like that. We simply wanted to try. We booked our flights to Delhi. We weren't chasing wins. We just wanted to experience something bigger than ourselves.",
-      image: "/src/assets/hcl-guvi/travel_plane.png",
+      image: travelPlaneImg,
       imageCaption: "EN ROUTE / NEW DELHI / COIMBATORE DEPARTURE"
     },
     {
@@ -821,7 +832,7 @@ export const hclGuviStory = {
       chapterNumber: "03",
       headline: "TOP 2% NATIONWIDE",
       text: "An email popped up in our inboxes. Out of over 40,000 students and builders nationwide, our project VeritasNet stood in the Top 2%. The results of the buildathon sprints were in. That moment… I don’t even have words. I felt like I was flying. Like all the sleepless nights, self-doubt, and quiet efforts were finally being acknowledged.",
-      image: "/src/assets/hcl-guvi/boarding_pass.png",
+      image: boardingPassImg,
       imageCaption: "BHARAT MANDAPAM INVITATION"
     },
     {
@@ -829,7 +840,7 @@ export const hclGuviStory = {
       chapterNumber: "04",
       headline: "THEN CAME DELHI",
       text: "Then came Delhi. More than a city, it became a turning point. We met people. Built connections. Explored powerful ideas and projects. And somewhere in between all those conversations and startup showcases, we felt something beautiful—that realization: 'We already know this. We’ve already worked on things like this. We are not behind.'",
-      image: "/src/assets/hcl-guvi/presentation_screen.png",
+      image: presentationScreenImg,
       imageCaption: "STAGE VIEW / BHARAT MANDAPAM / PRESENTATION SCREEN"
     },
     {
@@ -837,7 +848,7 @@ export const hclGuviStory = {
       chapterNumber: "05",
       headline: "WE DIDN'T WIN A TROPHY.",
       text: "We didn’t win a trophy. But we walked back with something far more valuable. Pride in how far we’ve come. Pride in the path we’re walking. Pride in the people who walked with us. Standing in Bharat Mandapam, seeing our code on the big screens. It was the first biggest milestone of my journey.",
-      image: "/src/assets/hcl-guvi/certificate.png",
+      image: certificateImg,
       imageCaption: "CERTIFICATE OF MERIT — TOP 2% NATIONAL FINALIST"
     },
     {
@@ -845,7 +856,7 @@ export const hclGuviStory = {
       chapterNumber: "06",
       headline: "OUR PILLARS OF STRENGTH",
       text: "My deepest gratitude to Monisha ma’am, for being more than a mentor — for being a constant source of care, belief, and strength. I’m also deeply grateful to our college management and placement team. And to my teammates Madhu Rithika, Raj Moorthy, and Girikannan — thank you for standing beside me, always.",
-      image: "/src/assets/hcl-guvi/team_poster.png",
+      image: teamPosterImg,
       imageCaption: "TEAM ASTRACHIP GRAND FINALE CEREMONY"
     }
   ]

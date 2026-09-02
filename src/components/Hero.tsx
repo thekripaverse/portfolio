@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { DecryptedText } from "./creative/CreativeComponents";
+import kripasreeImg from "../assets/kripasree.png";
 
 export default function Hero() {
   return (
@@ -72,7 +73,7 @@ export default function Hero() {
             className="w-64 h-[340px] sm:w-72 sm:h-[380px] md:w-[350px] md:h-[450px] overflow-hidden border border-black/10 bg-[#1C1412]/5 relative grayscale hover:grayscale-0 transition-all duration-700 ease-in-out shadow-2xl"
           >
             <img
-              src="/src/assets/kripasree.png"
+              src={kripasreeImg}
               alt="Kripasree Mohanraj"
               className="w-full h-full object-cover object-top scale-105 hover:scale-100 transition-transform duration-700 ease-in-out"
             />
